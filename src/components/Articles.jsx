@@ -6,34 +6,34 @@ const Articles = () => {
         {
             id : "1",
             image : "/images/",
-            writer : "",
+            writer : "By Claire Robinson",
             heading : "",
             infos : ""
         },
 
         {
-            id : "1",
+            id : "2",
             image : "/images/",
-            writer : "",
+            writer : "By Wilson Hutton",
             heading : "",
             infos : ""
         },
 
         {
-            id : "1",
+            id : "3",
             image : "/images/",
-            writer : "",
+            writer : "By Wilson Hutton",
             heading : "",
             infos : ""
         },
 
         {
-            id : "1",
+            id : "4",
             image : "/images/",
-            writer : "",
+            writer : "By Claire Robinson",
             heading : "",
             infos : ""
-        },
+        }
     ]
 
     return (
