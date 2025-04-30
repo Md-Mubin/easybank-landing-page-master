@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className='flex items-center justify-between gap-10'>
                         <ul>
                             <li>
-                                <img src="/images/logo.svg" alt="easybank logo" />
+                                <img src="/images/footer_logo.svg" alt="easybank logo" />
                             </li>
 
                             <li className='mt-10'>

@@ -1,54 +1,67 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-brandColor: #2d314d ;
+  --color-brandColor: #2d314d;
 }
 
-@utility container{
+@utility container {
   width: 100%;
-  margin : 0 auto;
-  
-  @variant xl{
+  margin: 0 auto;
+  padding-inline: 30px;
+
+  @variant xl {
     width: 1440px;
+    padding-inline: 0px;
   }
 }
 
-body{
+body {
   @apply overflow-x-hidden
 }
 
-.navItems{
+.navItems {
   @apply flex items-center gap-10 h-[10dvh]
 }
 
-.navItems li{
- @apply h-full font-medium text-lg text-[#000]
+.navItems li {
+  @apply h-full font-medium text-lg text-[#000]
 }
 
-.navItems li a{
+.navItems li a {
   @apply h-full flex items-center relative
 }
 
-.navItems a::after{
-  @apply content-[""] absolute bottom-0 left-0 w-full scale-0 h-1 rounded-full bg-[#000] duration-300
+.navItems a::after {
+  @apply content-[""] absolute bottom-0 left-0 w-full scale-0 h-1 rounded-full bg-gradient-to-r from-[#31d35c] to-[#2bb7da] duration-300
 }
 
-.navItems a:hover::after{
+.navItems a:hover::after {
   @apply scale-100
 }
 
-.footerSocials{
-  @apply flex items-center gap-4 
+.resNavItems{
+  @apply flex flex-col gap-3 absolute w-full bg-[#fff] left-0 top-26 rounded-lg p-8
+}
+
+.resNavItems li{
+  @apply py-2 text-lg font-normal text-center hover:bg-[#00000033] rounded-xl
+}
+.resNavItems li a{
+  @apply w-full
+}
+
+.footerSocials {
+  @apply flex items-center gap-4
 }
 
 .footerSocials li a {
   @apply text-[#f3f4f6] text-3xl hover:text-[#31d35c] duration-200
 }
 
-.footerLinks{
+.footerLinks {
   @apply flex flex-col gap-4
 }
 
-.footerLinks li a{
+.footerLinks li a {
   @apply text-[#f3f4f6] hover:text-[#31d35c] duration-200
 }

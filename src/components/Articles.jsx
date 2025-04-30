@@ -40,19 +40,19 @@ const Articles = () => {
         <>
             <section className='py-20 bg-[#fafafa]'>
                 <div className="container">
-                    <h2 className='text-[60px]'>Latest Articles</h2>
+                    <h2 className='text-[40px] text-center lg:text-start lg:text-[60px]'>Latest Articles</h2>
 
-                    <ul className='flex justify-between items-center gap-10 mt-10'>
+                    <ul className='flex justify-between items-center flex-wrap lg:flex-nowrap gap-10 mt-10'>
                         {
                             articleCards.map((items) => (
                                 <li
                                     key={items.id}
-                                    className='w-[400px] h-[550px] rounded-lg overflow-hidden hover:bg-[#fff] hover:shadow-xl duration-200 cursor-pointer'>
+                                    className='w-[400px] h-[550px] rounded-lg overflow-hidden hover:bg-[#fff] hover:shadow-xl duration-200 cursor-pointer group'>
                                     <img className='w-full h-[250px]' src={items.image} alt="card image" />
 
                                     <div className='p-6 '>
                                         <p className='text-sm'>{items.writer}</p>
-                                        <h4 className='my-5 text-xl font-semibold'>{items.heading}</h4>
+                                        <h4 className='my-5 text-xl font-semibold group-hover:text-[#28c6a8]'>{items.heading}</h4>
                                         <p className='text-lg'>{items.infos}</p>
                                     </div>
                                 </li>

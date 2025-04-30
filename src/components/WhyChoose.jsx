@@ -38,17 +38,17 @@ const WhyChoose = () => {
                 <div className="container">
                     <ul>
                         <li>
-                            <h2 className='text-[60px]'>Why Choose Easybank?</h2>
+                            <h2 className='text-[40px] text-center lg:text-start lg:text-[60px]'>Why Choose Easybank?</h2>
                         </li>
-                        <li className='mt-5 w-[750px]'>
-                            <p className='text-xl'>We leverage Open Banking to turn your bank account into your financial hub. Control
+                        <li className='mt-5 text-center lg:text-start lg:w-[750px]'>
+                            <p className='text-sm lg:text-xl'>We leverage Open Banking to turn your bank account into your financial hub. Control
                             your finances like never before.</p>
                         </li>
                     </ul>
-                    <ul className='mt-10 flex items-center justify-between gap-10'>
+                    <ul className='mt-10 flex items-center justify-between flex-wrap lg:flex-nowrap gap-10'>
                         {
                             whyChooseCards.map((items)=>(
-                                <li key={items.id} className='flex flex-col items-start gap-5 p-2'>
+                                <li key={items.id} className='flex flex-col items-center text-center lg:text-start lg:items-start gap-5 p-2'>
                                     <img src={items.icon} alt="icons" />
                                     <h4 className='font-semibold text-xl'>{items.heading}</h4>
                                     <p className='text-lg'>{items.infos}</p>
