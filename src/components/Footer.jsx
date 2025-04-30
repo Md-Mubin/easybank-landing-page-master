@@ -1,9 +1,10 @@
 import React from 'react'
+import { IoLogoFacebook, IoLogoInstagram, IoLogoTwitter, IoLogoPinterest, IoLogoYoutube } from "react-icons/io";
 
 const Footer = () => {
     return (
         <>
-            <footer className='py-20 bg-primary'>
+            <footer className='py-20 bg-brandColor'>
                 <div className="container">
                     <div className='flex items-center justify-between gap-10'>
                         <ul>
@@ -12,41 +13,41 @@ const Footer = () => {
                             </li>
 
                             <li className='mt-10'>
-                                <ul className='flex gap-4'>
+                                <ul className='footerSocials'>
                                     <li>
                                         <a href="#">
-                                            <img src="/images/icon-facebook.svg" alt="footer social logos" />
+                                            <IoLogoFacebook />
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="#">
-                                            <img src="/images/icon-instagram.svg" alt="footer social logos" />
+                                            <IoLogoYoutube />
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="#">
-                                            <img src="/images/icon-twitter.svg" alt="footer social logos" />
+                                            <IoLogoTwitter/>
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="#">
-                                            <img src="/images/icon-pinterest.svg" alt="footer social logos" />
+                                            <IoLogoPinterest/>
                                         </a>
                                     </li>
 
                                     <li>
                                         <a href="#">
-                                            <img src="/images/icon-instagram.svg" alt="footer social logos" />
+                                            <IoLogoInstagram/>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
 
-                        <ul className='flex flex-col gap-4'>
+                        <ul className='footerLinks'>
                             <li>
                                 <a href="#">About Us</a>
                             </li>
@@ -60,7 +61,7 @@ const Footer = () => {
                             </li>
                         </ul>
 
-                        <ul className='flex flex-col gap-4'>
+                        <ul className='footerLinks'>
                             <li>
                                 <a href="#">Careers</a>
                             </li>

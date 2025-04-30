@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #2d314d ;
+  --color-brandColor: #2d314d ;
 }
 
 @utility container{
@@ -35,4 +35,20 @@ body{
 
 .navItems a:hover::after{
   @apply scale-100
+}
+
+.footerSocials{
+  @apply flex items-center gap-4 
+}
+
+.footerSocials li a {
+  @apply text-[#f3f4f6] text-3xl hover:text-[#31d35c] duration-200
+}
+
+.footerLinks{
+  @apply flex flex-col gap-4
+}
+
+.footerLinks li a{
+  @apply text-[#f3f4f6] hover:text-[#31d35c] duration-200
 }
