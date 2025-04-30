@@ -45,7 +45,7 @@ const WhyChoose = () => {
                             your finances like never before.</p>
                         </li>
                     </ul>
-                    <ul className='mt-10 flex items-center justify-between flex-wrap lg:flex-nowrap gap-10'>
+                    <ul className='mt-10 flex items-center justify-between flex-wrap xl:flex-nowrap gap-10'>
                         {
                             whyChooseCards.map((items)=>(
                                 <li key={items.id} className='flex flex-col items-center text-center lg:text-start lg:items-start gap-5 p-2'>

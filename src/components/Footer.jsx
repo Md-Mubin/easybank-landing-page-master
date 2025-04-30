@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <footer className='py-20 bg-brandColor'>
                 <div className="container">
-                    <div className='flex items-center justify-between gap-10'>
+                    <div className='flex lg:items-center justify-between flex-col lg:flex-row gap-10'>
                         <ul>
                             <li>
                                 <img src="/images/footer_logo.svg" alt="easybank logo" />
@@ -75,10 +75,10 @@ const Footer = () => {
                             </li>
                         </ul>
 
-                        <ul className='ml-70 text-end'>
+                        <ul className='lg:ml-70 lg:text-end'>
                             <li>
                                 <a href="#">
-                                    <button className='px-8 py-3 bg-[#373a52] cursor-pointer hover:bg-gradient-to-r from-[#31d35c] to-[#2bb7da] rounded-3xl text-[#fff]'>Request Invite</button>
+                                    <button className='px-8 py-3 lg:bg-[#373a52] cursor-pointer bg-gradient-to-r lg:hover:bg-gradient-to-r from-[#31d35c] to-[#2bb7da] rounded-3xl text-[#fff]'>Request Invite</button>
                                 </a>
                             </li>
 
