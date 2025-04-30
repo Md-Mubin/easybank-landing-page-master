@@ -12,15 +12,31 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@utility container{
+  width: 100%;
+  margin : 0 auto;
+  
+  @variant xl{
+    width: 1440px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.navItems{
+  @apply flex items-center gap-10 h-[80px]
+}
+
+.navItems li{
+ @apply h-full 
+}
+
+.navItems li a{
+  @apply h-full flex items-center relative
+}
+
+.navItems a::after{
+  @apply content-[""] absolute bottom-0 left-0 w-full scale-0 h-[2px] bg-[#000] duration-300
+}
+
+.navItems a:hover::after{
+  @apply scale-100
 }
