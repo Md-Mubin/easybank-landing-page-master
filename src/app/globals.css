@@ -21,12 +21,16 @@
   }
 }
 
+body{
+  @apply overflow-x-hidden
+}
+
 .navItems{
-  @apply flex items-center gap-10 h-[80px]
+  @apply flex items-center gap-10 h-[10dvh]
 }
 
 .navItems li{
- @apply h-full 
+ @apply h-full font-medium text-lg text-[#000]
 }
 
 .navItems li a{
@@ -34,7 +38,7 @@
 }
 
 .navItems a::after{
-  @apply content-[""] absolute bottom-0 left-0 w-full scale-0 h-[2px] bg-[#000] duration-300
+  @apply content-[""] absolute bottom-0 left-0 w-full scale-0 h-1 rounded-full bg-[#000] duration-300
 }
 
 .navItems a:hover::after{

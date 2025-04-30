@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
     return (
         <>
-            <nav className='w-full bg-[#fff] sticky top-0'>
+            <nav className='w-full bg-[#fff] sticky top-0 z-[100]'>
                 <div className="container">
                     <div className="flex justify-between items-center">
                         <img src="/images/logo.svg" alt="easybank logo" />
