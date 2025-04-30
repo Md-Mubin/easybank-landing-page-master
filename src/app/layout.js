@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Public_Sans } from 'next/font/google';
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Frontend Mentor | Easybank landing page",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={publicSans.className}>
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
