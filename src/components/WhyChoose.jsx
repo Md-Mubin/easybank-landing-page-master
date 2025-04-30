@@ -50,7 +50,7 @@ const WhyChoose = () => {
                             whyChooseCards.map((items)=>(
                                 <li key={items.key} className='flex flex-col items-start gap-5'>
                                     <img src={items.icon} alt="icons" />
-                                    <h4>{items.heading}</h4>
+                                    <h4 className='font-semibold text-xl'>{items.heading}</h4>
                                     <p>{items.infos}</p>
                                 </li>
                             ))
