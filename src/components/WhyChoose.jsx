@@ -34,7 +34,7 @@ const WhyChoose = () => {
 
     return (
         <>
-            <section className='py-20 h-[100dvh] bg-slate-200'>
+            <section className='py-20 bg-slate-200'>
                 <div className="container">
                     <ul>
                         <li>
@@ -45,13 +45,13 @@ const WhyChoose = () => {
                             your finances like never before.</p>
                         </li>
                     </ul>
-                    <ul className='mt-10 flex items-center gap-10'>
+                    <ul className='mt-10 flex items-center justify-between gap-10'>
                         {
                             whyChooseCards.map((items)=>(
-                                <li key={items.key} className='flex flex-col items-start gap-5'>
+                                <li key={items.id} className='flex flex-col items-start gap-5 p-2'>
                                     <img src={items.icon} alt="icons" />
                                     <h4 className='font-semibold text-xl'>{items.heading}</h4>
-                                    <p>{items.infos}</p>
+                                    <p className='text-lg'>{items.infos}</p>
                                 </li>
                             ))
                         }
