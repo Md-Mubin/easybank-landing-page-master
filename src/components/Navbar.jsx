@@ -41,7 +41,7 @@ const Navbar = () => {
                     </div>
 
                     {/* ============ resposnive navbar ============ */}
-                    <div className="flex justify-between h-[8vh] items-center relative lg:hidden ">
+                    <div className="flex justify-between h-[8vh] items-center relative z-100 lg:hidden ">
                         <img src="/images/logo.svg" alt="easybank logo" />
 
                         {/* res_nav-items */}
@@ -74,6 +74,7 @@ const Navbar = () => {
                         </button>
                     </div>
                 </div>
+                <div onClick={()=>setShow(false)} className={show && "w-full h-[100dvh] bg-[#0000004d] absolute top-[8vh] left-0 z-10"}></div>
             </nav>
         </>
     )
