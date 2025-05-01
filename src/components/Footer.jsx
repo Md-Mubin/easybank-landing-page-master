@@ -78,7 +78,7 @@ const Footer = () => {
                         <ul className='lg:ml-70 lg:text-end'>
                             <li>
                                 <a href="#">
-                                    <button className='px-8 py-3 lg:bg-[#373a52] cursor-pointer bg-gradient-to-r lg:hover:bg-gradient-to-r from-[#31d35c] to-[#2bb7da] rounded-3xl text-[#fff]'>Request Invite</button>
+                                    <button className='px-8 py-3 bg-gradient-to-r lg:bg-none lg:hover:bg-gradient-to-r from-[#31d35c] to-[#2bb7da] text-white lg:text-black hover:text-white lg:ring-2 lg:ring-[#00000033] hover:ring-white rounded-full duration-200 cursor-pointer'>Request Invite</button>
                                 </a>
                             </li>
 
