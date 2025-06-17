@@ -2,7 +2,7 @@ import React from 'react'
 
 const Banner = () => {
     return (
-        <>
+        <> 
             <section className='lg:h-[90dvh] relative'>
                 <div className="w-full h-full flex flex-col-reverse lg:flex-row justify-between items-center">
                     <div className='container'>
